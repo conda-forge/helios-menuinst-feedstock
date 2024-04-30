@@ -1,6 +1,6 @@
 package:
   name: helios-menuinst
-  version: "0.2.1"
+  version: "0.2.2"
 
 source:
   path: src
@@ -10,8 +10,8 @@ build:
   number: 0
   script:
     - mkdir -p {{ PREFIX }}/Menu
-    - cp {{ SRC_DIR }}/3dgeo.ico {{ PREFIX }}/Menu/3dgeo.ico   # [ win ]
-    - cp {{ SRC_DIR }}/3dgeo.png {{ PREFIX }}/Menu/3dgeo.png  # [ not win ]
+    - cp {{ SRC_DIR }}/3dgeo.ico {{ PREFIX }}/Menu/3dgeo.ico
+    - cp {{ SRC_DIR }}/3dgeo.png {{ PREFIX }}/Menu/3dgeo.png
     - cp {{ SRC_DIR }}/menu.json {{ PREFIX }}/Menu/helios-menuinst.json
 
 requirements:
@@ -21,8 +21,8 @@ requirements:
 test:
   commands:
     - test -f $PREFIX/Menu/helios-menuinst.json
-    - test -f $PREFIX/Menu/3dgeo.ico  # [ win ]
-    - test -f $PREFIX/Menu/3dgeo.png  # [ not win ]
+    - test -f $PREFIX/Menu/3dgeo.ico
+    - test -f $PREFIX/Menu/3dgeo.png
 
 about:
   home: https://github.com/3dgeo-heidelberg/helios
