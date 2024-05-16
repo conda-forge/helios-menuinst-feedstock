@@ -24,7 +24,7 @@
         "description": "A terminal session with Helios++",
         "activate": true,
         "terminal": true,
-        "command": ["%windir%\\system32\\cmd.exe", "/K", "${ROOT_PREFIX}\\Scripts\\activate.bat", "${PREFIX}"],
+        "command": ["%windir%\\system32\\cmd.exe", "/K", "{{ ROOT_PREFIX }}\\Scripts\\activate.bat", "{{ PREFIX }}"],
         "icon": "{{ PREFIX }}/Menu/3dgeo.ico",
         "platforms": {
           "win": {}
