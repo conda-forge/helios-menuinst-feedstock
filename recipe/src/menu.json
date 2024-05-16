@@ -15,7 +15,8 @@
           },
           "osx": {},
           "win": {
-            "icon": "{{ PREFIX }}/Menu/3dgeo.ico"
+            "icon": "{{ PREFIX }}/Menu/3dgeo.ico",
+            "working_dir": "%USERPROFILE%"
           }
         }
       },
@@ -24,7 +25,8 @@
         "description": "A terminal session with Helios++",
         "activate": true,
         "terminal": true,
-        "command": ["%windir%\\system32\\cmd.exe", "/K", "{{ ROOT_PREFIX }}\\Scripts\\activate.bat", "{{ PREFIX }}"],
+        "working_dir": "%USERPROFILE%",
+        "command": ["%windir%\\system32\\cmd.exe", "/K", "{{ ROOT_PREFIX }}\\Scripts\\activate.bat"],
         "icon": "{{ PREFIX }}/Menu/3dgeo.ico",
         "platforms": {
           "win": {}
