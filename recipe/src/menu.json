@@ -29,7 +29,9 @@
         "command": ["%windir%\\system32\\cmd.exe", "/K", "{{ ROOT_PREFIX }}\\Scripts\\activate.bat"],
         "icon": "{{ PREFIX }}/Menu/3dgeo.ico",
         "platforms": {
-          "win": {}
+          "win": {},
+          "linux": null,
+          "osx": null
         }
       }
     ]
