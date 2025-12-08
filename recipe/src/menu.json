@@ -29,9 +29,7 @@
         "command": ["echo", "Activated Helios Environment..."],
         "icon": "{{ PREFIX }}/Menu/3dgeo.ico",
         "platforms": {
-          "win": {},
-          "linux": null,
-          "osx": null
+          "win": {}
         }
       }
     ]
