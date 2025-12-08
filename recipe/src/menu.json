@@ -26,7 +26,7 @@
         "activate": true,
         "terminal": true,
         "working_dir": "%USERPROFILE%",
-        "command": ["echo", "Activated Helios Environment..."],
+        "command": ["%windir%\\system32\\cmd.exe", "/K", "{{ PREFIX }}\\Scripts\\activate.bat"],
         "icon": "{{ PREFIX }}/Menu/3dgeo.ico",
         "platforms": {
           "win": {}
