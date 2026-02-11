@@ -27,9 +27,9 @@
         "terminal": true,
         "working_dir": "%USERPROFILE%",
         "command": [
-          "cmd.exe",
-          "/C",
-          "Helios++ environment successfully activated, above error message is a known issue."
+          "%windir%\\system32\\cmd.exe",
+          "/K",
+          "CALL \"{{ PREFIX }}\\Scripts\\activate.bat\" & ECHO Helios++ environment successfully activated, above error message is a known issue (see https://github.com/conda/conda/issues/14884)"
         ],
         "icon": "{{ PREFIX }}/Menu/3dgeo.ico",
         "platforms": {
